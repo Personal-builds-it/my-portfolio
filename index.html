@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | Software Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #172554;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #2454D6;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #2454D6;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(120deg, #ffffff, #EEF4FF);
+}
+
+.tag {
+    color: #2454D6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #2454D6;
+}
+
+.hero p {
+    color: #64748b;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2454D6;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #173da8;
+    transform: translateY(-2px);
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 750px;
+    color: #64748b;
+}
+
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 27px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(36,84,214,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #2454D6;
+}
+
+.card h3 {
+    color: #2454D6;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.skills {
+    background: #f8faff;
+}
+
+.contact {
+    background: #EEF4FF;
+    text-align: center;
+}
+
+.contact p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MyPortfolio.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <p class="tag">WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hello, I'm <span>[Your Name]</span>.<br>
+    An Aspiring Software Engineer.</h1>
+
+    <p>
+        I'm a Software Engineering student at GCTU,
+        passionate about technology, creative thinking
+        and building solutions that make a difference.
+        I'm learning, experimenting and growing one project at a time.
+    </p>
+
+    <a href="#projects" class="btn">Explore My Projects</a>
+</section>
+
+<section id="about">
+    <h2>About Me.</h2>
+
+    <p>
+        I'm currently pursuing Software Engineering at Ghana
+        Communication Technology University (GCTU).
+
+        My journey into technology is driven by curiosity and
+        a desire to understand how digital solutions are built.
+
+        I'm developing my skills in programming, web development
+        and computer systems while exploring opportunities
+        to turn ideas into practical solutions.
+    </p>
+</section>
+
+<section class="skills" id="skills">
+    <h2>Skills & Technologies.</h2>
+
+    <div class="skills-grid">
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Learning to structure and build web pages.</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Exploring website styling and responsive layouts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>Building programming and logical thinking skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Git & GitHub</h3>
+            <p>Learning version control and project management.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects.</h2>
+
+    <div class="projects-grid">
+
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>A personal website designed to showcase my journey,
+            skills and projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Python Exercises</h3>
+            <p>Beginner programming exercises exploring
+            variables, conditions and problem-solving.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Projects</h3>
+            <p>Exploring digital products and creative
+            technology-driven solutions.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Let's Connect.</h2>
+
+    <p>I'm always open to learning, collaboration
+    and exciting opportunities.</p>
+
+    <a href="mailto:your@email.com" class="btn">
+        Get In Touch
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 [Your Name]. All Rights Reserved.</p>
+    <p>Designed with curiosity and built with code.</p>
+</footer>
+
+</body>
+</html>
